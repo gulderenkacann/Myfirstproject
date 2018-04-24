@@ -61,7 +61,7 @@ p2.setLayout(new GridLayout (0,1));
   p7.setLayout(new GridLayout (1,0));
   add(p); add(p2); add(p3);add(p4);add(p5);add(p6);add(p7);
                
-    p.add(new JLabel("DOMINO'S PIZZA MAKER               "));
+    p.add(new JLabel("CODEZERO'S PIZZA MAKER               "));
 pictureLabel.setIcon(imageLocation);
 pictureLabel.setPreferredSize(new Dimension(500,250));
 p2.add(pictureLabel);
