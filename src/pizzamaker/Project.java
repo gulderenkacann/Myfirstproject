@@ -21,6 +21,7 @@ public class Project extends JFrame implements ActionListener {
      JCheckBox itemA = new JCheckBox("macrooni");
       JCheckBox itemB = new JCheckBox("pepper");
        JCheckBox itemC = new JCheckBox("salt");
+       JCheckBox itemD = new JCheckBox("egg");
        
      private JComboBox size2 = new JComboBox(comboBoxValues);
     JPanel pl = new JPanel();JPanel p2 = new JPanel();
@@ -79,7 +80,7 @@ p4.add(flour);
 
 p5.add(new JLabel("    Please select other prefered ingredients:    "));
 p6.add(item); p6.add(item2);p6.add(item3); p6.add(item4); p6.add(item5);p6.add(item6);p6.add(item7);
-p6.add(item8); p6.add(item9);p6.add(itemA);p6.add(itemB);p6.add(itemC);
+p6.add(item8); p6.add(item9);p6.add(itemA);p6.add(itemB);p6.add(itemC);p6.add(itemD);
 
 
 p7.add(new JLabel("Click Continue to proccess:  "),SOUTH);
@@ -134,6 +135,7 @@ JOptionPane.showMessageDialog(null,
                if (itemA.isSelected()) items += "macrooni,  \n";
                 if (itemB.isSelected()) items += "pepper,  \n";
                  if (itemC.isSelected()) items += "salt,  \n";
+                  if (itemD.isSelected()) items += "egg,  \n";
      
                  if (item.isSelected())  ing = "Cheese,  \n"; 
                if (item2.isSelected()) ing = "Chicken,  \n";
@@ -165,7 +167,7 @@ JOptionPane.showMessageDialog(null,
  item2.setSelected(false); item.setSelected(false); item3.setSelected(false);
   item4.setSelected(false); item5.setSelected(false); item6.setSelected(false);
    item7.setSelected(false); item8.setSelected(false); item9.setSelected(false);
-   itemA.setSelected(false); itemB.setSelected(false); itemC.setSelected(false);     
+   itemA.setSelected(false); itemB.setSelected(false); itemC.setSelected(false);itemD.setSelected(false);     
         
         }
     }
